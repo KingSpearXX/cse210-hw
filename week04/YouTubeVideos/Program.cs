@@ -33,6 +33,13 @@ namespace YouTubeVideos
             comment2.AddReply(reply3);
             video2.AddComment(comment2);
             _videos.Add(video2);
+
+            Videos video3 = new Videos("Java Tutorial", "Charlie", "Learn Java in 30 minutes", "https://www.youtube.com/watch?v=0pZV8dJ7qHc", new string[] { "Java", "Programming", "Tutorial" }, 3000, 30, 3);
+            Comments comment3 = new Comments("Alice", "Great video!");
+            Replies reply4 = new Replies("Charlie", "Thanks!");
+            comment3.AddReply(reply4);
+            video3.AddComment(comment3);
+            _videos.Add(video3);
         }
     }
 }

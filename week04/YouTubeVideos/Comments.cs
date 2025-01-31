@@ -33,17 +33,13 @@ namespace YouTubeVideos
         }
         public void GetDisplayText()
         {
-            Console.WriteLine($"Author: {Author}");
-            Console.WriteLine($"Text: {Text}");
-            Console.WriteLine($"Likes: {Likes}");
-            Console.WriteLine($"Dislikes: {Dislikes}");
-            Console.WriteLine("Replies:");
+            Console.WriteLine($"\tAuthor: {Author} - {Text}");
+            Console.WriteLine($"\tLikes: {Likes} Dislikes: {Dislikes}");
+            Console.WriteLine("\tReplies:");
             foreach (Replies reply in _Replies)
             {
-                Console.WriteLine($"\tAuthor: {reply.Author}");
-                Console.WriteLine($"\tText: {reply.Text}");
-                Console.WriteLine($"\tLikes: {reply.Likes}");
-                Console.WriteLine($"\tDislikes: {reply.Dislikes} \n");
+                Console.WriteLine($"\t\tAuthor: {reply.Author} - {reply.Text}");
+                Console.WriteLine($"\t\tLikes: {reply.Likes} Dislikes: {reply.Dislikes} \n");
             }
         }
     }

@@ -41,16 +41,11 @@ namespace YouTubeVideos {
         }
         public void GetDisplayText()
         {
-            Console.WriteLine($"Title: {Title}");
-            Console.WriteLine($"Author: {Author}");
-            Console.WriteLine($"Description: {Description}");
-            Console.WriteLine($"URL: {URL}");
+            Console.WriteLine($"Title: {Title} URL: {URL}\n");
+            Console.WriteLine($"Author: {Author} Description: {Description}");
             Console.WriteLine($"Tags: {string.Join(", ", Tags)}");
-            Console.WriteLine($"Duration: {Duration}");
-            Console.WriteLine($"Views: {Views}");
-            Console.WriteLine($"Likes: {Likes}");
-            Console.WriteLine($"Dislikes: {Dislikes}");
-            Console.WriteLine("Comments:");
+            Console.WriteLine($"Duration: {Duration} seconds Views: {Views} Likes: {Likes} Dislikes: {Dislikes}");
+            Console.WriteLine($"Comments: {Comments.Count}");
             foreach (Comments comment in Comments)
             {
                 comment.GetDisplayText();
