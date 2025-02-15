@@ -1,9 +1,13 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
-class Program
-{
-    static void Main(string[] args)
+namespace EternalQuest {
+    class Program
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        static void Main(string[] args)
+        {
+            GoalManager goalManager = new GoalManager();
+            goalManager.Start();
+        }
     }
 }
